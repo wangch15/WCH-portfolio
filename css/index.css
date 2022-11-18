@@ -543,7 +543,7 @@ main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
   margin-right: 20px;
 }
 main #aboutMe .container .right-side-area .personality-area ul li span {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--fontcolor, #88929B);
   font-weight: 500;
 }
