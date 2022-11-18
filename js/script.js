@@ -1,6 +1,6 @@
 // ============= typing ===============//
 var typed = new Typed(".typing",{
-    strings:["","WEB DESIGN","WEB DEVELOP","GRAPHIC DESIGN","FIGURE PANIT"],
+    strings:["","WEB DESIGN","WEB DEVELOP","GRAPHIC DESIGN","FIGURE PAINT"],
     typeSpeed:120,
     backSpeed:90,
     backDelay:1500,
