@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+textarea,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.darkmode {
+  --maincolor:#e8ecf0;
+  --fontcolor:#88929B;
+  --bgcolor:#394149;
+  --hovercolor:black;
+}
+
+.color-example {
+  background-color: var(--maincolor, #394149);
+}
+
+:root {
+  --p1920:calc(100vw / 1920);
+  --p1440: calc(100vw / 1440);
+  --p1100: calc(100vw / 1100);
+  --p768: calc(100vw / 768);
+  --p468: calc(100vw / 468);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--bgcolor, #ffffff);
+}
+
+header {
+  margin: 0 25px;
+  width: calc(100% - 50px);
+  height: 60px;
+  border-bottom: 1px solid var(--maincolor, #394149);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-area {
+  width: 140px;
+  height: 100%;
+  border-right: 1px solid var(--maincolor, #394149);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .logo-area a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--maincolor, #394149);
+}
+header nav {
+  flex: 1;
+  height: 100%;
+}
+header .sns-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  border-left: 1px solid var(--maincolor, #394149);
+  padding-left: 10px;
+}
+header .sns-area .fa-brands {
+  font-size: 1.5rem;
+  color: var(--maincolor, #394149);
+  cursor: pointer;
+  margin-left: 12px;
+}
+header .sns-area .fa-brands:hover {
+  transform: translateY(-5px);
+}
+
+main #intro {
+  margin: 0 25px;
+  height: calc(100vh - 60px);
+  border-bottom: 1px solid var(--maincolor, #394149);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #intro .intro-top {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #intro .intro-top button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--maincolor, #394149);
+}
+main #intro .intro-top .modeBtn {
+  cursor: pointer;
+}
+main #intro .intro-top .modeBtn:hover {
+  font-weight: 700;
+}
+main #intro .container {
+  width: 1024px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #intro .container .intro-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area {
+  height: 100%;
+  min-height: 372px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main #intro .container .intro-info .left-side-area .name-area {
+  color: var(--maincolor, #394149);
+}
+main #intro .container .intro-info .left-side-area .name-area .introTop {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .name-area .introTop .im {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
+  font-size: 3.4375rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+main #intro .container .intro-info .left-side-area .name-area .introBottom {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+main #intro .container .intro-info .left-side-area .skill-area {
+  color: var(--fontcolor, #88929B);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+main #intro .container .intro-info .left-side-area .skill-area span {
+  color: var(--maincolor, #394149);
+  font-weight: 900;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
+  min-width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox .fa-solid {
+  font-size: 15px;
+  color: var(--maincolor, #394149);
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox span {
+  font-size: 1rem;
+  color: var(--fontcolor, #88929B);
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox .fa-solid {
+  font-size: 16px;
+  color: var(--maincolor, #394149);
+}
+main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox span {
+  font-size: 1rem;
+  color: var(--fontcolor, #88929B);
+}
+main #intro .container .intro-info .left-side-area .contact-area .language-box {
+  font-size: 1rem;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-title {
+  color: var(--maincolor, #394149);
+  font-weight: 700;
+}
+main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-content {
+  color: var(--fontcolor, #88929B);
+}
+main #intro .container .intro-info .right-side-area {
+  flex: 1;
+}
+main #intro .container .intro-info .right-side-area p {
+  font-size: 1rem;
+  color: var(--fontcolor, #88929B);
+}
+main #works {
+  margin-left: 25px;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main #works .title-area {
+  padding-top: 50px;
+  min-width: 140px;
+  height: 100%;
+  border-right: 1px solid var(--maincolor, #394149);
+  margin-right: 100px;
+}
+main #works .title-area span {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--maincolor, #394149);
+  line-height: 3.75rem;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+main #works .swiper-area {
+  width: 100%;
+  height: calc(100% - 50px);
+  margin-top: 50px;
+  overflow: hidden;
+}
+main #aboutMe {
+  margin: 0 25px;
+  height: calc(100vh - 60px);
+  border-top: 1px solid var(--maincolor, #394149);
+  border-bottom: 1px solid var(--maincolor, #394149);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #aboutMe .container {
+  width: 1024px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main #aboutMe .container .left-side-area {
+  width: 400px;
+  min-height: 590px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 70px;
+}
+main #aboutMe .container .left-side-area .title-area {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--maincolor, #394149);
+  flex: 1;
+  line-height: 60px;
+}
+main #aboutMe .container .left-side-area .photo-area {
+  width: 100%;
+  height: 410px;
+  background: black;
+}
+main #aboutMe .container .right-side-area {
+  flex: 1;
+  min-height: 590px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main #aboutMe .container .right-side-area .personality-area {
+  width: 100%;
+}
+main #aboutMe .container .right-side-area .personality-area ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main #aboutMe .container .right-side-area .personality-area ul li {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
+  color: var(--maincolor, #394149);
+  font-size: 15px;
+  margin-right: 20px;
+}
+main #aboutMe .container .right-side-area .personality-area ul li span {
+  font-size: 1.125rem;
+  color: var(--fontcolor, #88929B);
+  font-weight: 500;
+}
+main #aboutMe .container .right-side-area .skills-area {
+  width: 100%;
+  height: 410px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main #aboutMe .container .right-side-area .skills-area .title {
+  font-size: 1.6875rem;
+  font-weight: 700;
+  color: var(--maincolor, #394149);
+}
+main #aboutMe .container .right-side-area .skills-area .skill-content {
+  width: 100%;
+}
+main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top {
+  width: 100%;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top .content {
+  font-size: 1rem;
+  color: var(--fontcolor, #88929B);
+}
+main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom {
+  width: 100%;
+  height: 16px;
+  border: 1px solid var(--maincolor, #394149);
+}
+main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom .fullbar {
+  border: 1px solid var(--bgcolor, #ffffff);
+  height: 100%;
+  background: var(--maincolor, #394149);
+}
+
+footer {
+  margin: 0 25px;
+  width: calc(100% - 50px);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyright {
+  font-size: 1rem;
+  color: var(--maincolor, #394149);
+  font-weight: 500;
+}
+footer .contact-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact-area .sns-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-left: 10px;
+}
+footer .contact-area .sns-area .fa-brands {
+  font-size: 1.5rem;
+  color: var(--maincolor, #394149);
+  cursor: pointer;
+  margin-left: 12px;
+}
+footer .contact-area .sns-area .fa-brands:hover {
+  transform: translateY(-5px);
+}
+footer .contact-area .contact-p-e-area {
+  font-size: 1rem;
+  color: var(--maincolor, #394149);
+  font-weight: 500;
+  margin-left: 30px;
+}/*# sourceMappingURL=index.css.map */

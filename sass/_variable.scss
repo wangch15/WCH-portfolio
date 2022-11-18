@@ -1,0 +1,32 @@
+//網頁字體
+$chFont:'Noto Sans TC';
+$engFont:'Inter';
+
+
+//文字字級
+$h1: 3.75rem;
+$h2: 3.4375rem;
+$h3: 2.25rem;
+$h4: 1.6875rem;
+$h5: 1.125rem;
+$h6: 1rem;
+
+
+//顏色設置
+$maincolor:#394149;
+$fontcolor:#88929B;
+$bgcolor:#ffffff ;
+$hovercolor:#ffffff;
+
+//深色模式，之後需要會正式啟用
+.darkmode {
+--maincolor:#e8ecf0;
+--fontcolor:#88929B;
+--bgcolor:#394149;
+--hovercolor:black;
+}
+
+//如需使用顏色，請幫我使用上面那段var開始的顏色代碼，下面為範例
+.color-example {
+    background-color: var(--maincolor, $maincolor);
+}

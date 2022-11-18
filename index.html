@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WangChiaHui Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css//swiper.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="#">WANG-CH</a>
+        </div>
+        <nav></nav>
+        <div class="sns-area">
+            <i class="fa-brands fa-line"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="intro-top">
+                <button class="introfont">INTRO</button>
+                <button class="modeBtn" onclick="changeMode()">DARK MODE</button>
+            </div>
+            <div class="container">
+                <div class="intro-info">
+                    <div class="left-side-area">
+                        <div class="name-area">
+                            <div class="introTop">
+                                <span class="im">Hi, I'm</span><span class="ch-name">王 家輝</span>
+                            </div>
+                            <div class="introBottom">
+                                <span>WANG CHIA HUI</span>
+                            </div>
+                        </div>
+                        <div class="skill-area">
+                            I can <span class="typing"></span>
+                        </div>
+                        <div class="contact-area">
+                            <div class="age-phone-box">
+                                <div class="firstbox">
+                                    <div class="iconbox"><i class="fa-solid fa-user"></i></div><span>1991.02.02</span>
+                                </div>
+                                <div class="secondbox">
+                                    <div class="iconbox"><i class="fa-solid fa-phone"></i></div>
+                                    <span>0920-234-357</span>
+                                </div>
+                            </div>
+                            <div class="address-mail-box">
+                                <div class="firstbox">
+                                    <div class="iconbox"><i class="fa-solid fa-house"></div></i><span>雲林縣. 台灣</span>
+                                </div>
+                                <div class="secondbox">
+                                    <div class="iconbox"><i class="fa-solid fa-envelope"></i></div>
+                                    <span>wangch2215@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="language-box">
+                                <span class="lang-title">LANGUAGE /</span><span class="lang-content"> Chinese, English,
+                                    Japanese</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side-area">
+                        <p>於臺南從事平面設計師的工作約六年餘，具有CIS規劃、其他平面設計的編排能力。</p>
+                        <br>
+                        <p>在一次前往關西的自助旅行時，萌生了「如果能在日本定居一段時間看看就好了。」的念頭，以此為動力開始自學日文，於隔年取得日檢N2的成績，並前往日本大阪打工度假，雖在七個月後因疫情返台，但在日本的這段期間學習到了日本人對於工作上嚴謹認真的態度，深感佩服，也期許自己可以應用在日後的工作職位上。
+                        </p>
+                        <br>
+                        <p>從日本回來後，因想拓展自身更多可能性，而沒有選擇繼續往平面設計的方向發展，前往臺北從事影視劇組美術組的自由接案工作。在影視工作上，因工作時程全憑自身安排，造就現在擁有自我管理，並合理安排工作排程之能力。
+                        </p>
+                        <br>
+                        <p>以美術組前同事的推薦為契機，開始了網頁前端開發的學習之路，對此深感興趣，並持續學習至今。 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div class="title-area">
+                <span>WORKS</span>
+            </div>
+            <div class="swiper-area">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- 這裡開始新增swiper內容 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-info-box">
+                                <div class="info-title-box">
+                                    <div class="title">森五七行館形象網站</div>
+                                    <div class="category">WEB DEVELOP</div>
+                                </div>
+                                <div class="info-content">
+                                    UI / UX設計, 前端頁面切版, 內含最新消息新增功能。<br>
+                                    開發工具 : HTML, CSS, JavaScript, Laravel<br>
+                                </div>
+                            </div>
+                            <a href="https://www.shen57.com/" class="swiper-img" style="background-image: url(./img/shen57-mockup@2x.jpg) ;" target="_blank">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-info-box">
+                                <div class="info-title-box">
+                                    <div class="title">森五七行館形象網站</div>
+                                    <div class="category">WEB DEVELOP</div>
+                                </div>
+                                <div class="info-content">
+                                    UI / UX設計, 前端頁面切版, 內含最新消息新增功能。<br>
+                                    開發工具 : HTML, CSS, JavaScript, Laravel<br>
+                                </div>
+                            </div>
+                            <a href="https://www.shen57.com/" class="swiper-img" style="background-image: url(./img/shen57-mockup@2x.jpg) ;" target="_blank">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-info-box">
+                                <div class="info-title-box">
+                                    <div class="title">森五七行館形象網站</div>
+                                    <div class="category">WEB DEVELOP</div>
+                                </div>
+                                <div class="info-content">
+                                    UI / UX設計, 前端頁面切版, 內含最新消息新增功能。<br>
+                                    開發工具 : HTML, CSS, JavaScript, Laravel<br>
+                                </div>
+                            </div>
+                            <a href="https://www.shen57.com/" class="swiper-img" style="background-image: url(./img/shen57-mockup@2x.jpg) ;" target="_blank">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-info-box">
+                                <div class="info-title-box">
+                                    <div class="title">森五七行館形象網站</div>
+                                    <div class="category">WEB DEVELOP</div>
+                                </div>
+                                <div class="info-content">
+                                    UI / UX設計, 前端頁面切版, 內含最新消息新增功能。<br>
+                                    開發工具 : HTML, CSS, JavaScript, Laravel<br>
+                                </div>
+                            </div>
+                            <a href="https://www.shen57.com/" class="swiper-img" style="background-image: url(./img/shen57-mockup@2x.jpg) ;" target="_blank">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!-- 這裡結束新增swiper內容 -->
+                    </div>
+                    <div class="next-prev-box">
+                        <div class="swiper-button-prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutMe">
+            <div class="container">
+                <div class="left-side-area">
+                    <div class="title-area">ABOUT ME</div>
+                    <div class="photo-area"></div>
+                </div>
+                <div class="right-side-area">
+                    <div class="personality-area">
+                        <ul>
+                            <li><i class="fa-solid fa-circle"></i><span>喜愛挑戰新事物</span></li>
+                            <li><i class="fa-solid fa-circle"></i><span>樂於分享、交流</span></li>
+                            <li><i class="fa-solid fa-circle"></i><span>善於臨機應變、適應力強</span></li>
+                            <li><i class="fa-solid fa-circle"></i><span>行動力強、積極於自我提升</span></li>
+                            <li><i class="fa-solid fa-circle"></i><span>喜好團隊合作、善於溝通表達</span></li>
+                            <li><i class="fa-solid fa-circle"></i><span>兼具獨自完成作業之能力</span></li>
+                        </ul>
+                    </div>
+                    <div class="skills-area">
+                        <div class="title">SKILLS</div>
+                        <!-- skill bar -->
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">HTML, CSS</div>
+                                <div class="content">85%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">JavaScript</div>
+                                <div class="content">75%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">HTML, CSS</div>
+                                <div class="content">85%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">Laravel</div>
+                                <div class="content">60%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">illustrator</div>
+                                <div class="content">90%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">Photoshop</div>
+                                <div class="content">90%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-content">
+                            <div class="skill-content-top">
+                                <div class="content">Painting</div>
+                                <div class="content">85%</div>
+                            </div>
+                            <div class="skill-content-bottom">
+                                <div class="fullbar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">Copyright © 2022 WangChiaHui</div>
+        <div class="contact-area">
+            <div class="sns-area">
+                <i class="fa-brands fa-line"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="contact-p-e-area">wangch2215@gmail.com</div>
+            <div class="contact-p-e-area">+886-920-234-357</div>
+        </div>
+    </footer>
+
+
+    <!-- js area -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

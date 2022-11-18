@@ -1,0 +1,144 @@
+@import 'reset';
+@import 'variable';
+@import 'mixin';
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+
+//=====================my swiper css=======================//
+
+.swiper-wrapper{
+    height: 565px;
+}
+
+.swiper-slide {
+    background-color: unset;
+    width: 400px;
+    height: 100%;
+    @include flex(flex-start,flex-start);
+    flex-direction: column;
+    .swiper-info-box{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+        @include flex(flex-start,flex-start);
+        flex-direction: column;
+        .info-title-box{
+            margin-bottom: 20px;
+            .title{
+                font-size: $h4;
+                font-weight: 700;
+                color: var(--maincolor, $maincolor);
+            }
+            .category{
+                font-size: $h6;
+                color: var(--fontcolor, $fontcolor);
+                text-align: start;
+            }
+        }
+        .info-content{
+            font-size: $h6;
+            color: var(--fontcolor, $fontcolor);
+            text-align: start;
+        }
+    }
+    .swiper-img{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        
+        .mask{
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            transition: 1s;
+        }
+        &:hover .mask{
+            background-color: var(--hovercolor,$hovercolor);
+            opacity: 0.5;
+        }
+    }
+}
+
+.next-prev-box{
+    position: relative;
+    margin-top: 100px;
+    width:120px;
+    height: 50px;
+    @include flex(space-between,center);
+
+    .swiper-button-next, .swiper-button-prev {
+        border-radius: 50%;
+        border: 1px solid var(--maincolor, $maincolor);
+        width: 50px;
+        height: 50px;
+        position:static;
+        transition: .5s;
+        &::after{
+           content: unset;
+        }
+        i{
+            font-size: 25px;
+            color: var(--maincolor, $maincolor);
+            transition: .5s;
+        }
+        &:hover {
+            background-color: var(--maincolor, $maincolor);
+
+            i{
+                color: var(--bgcolor, $bgcolor);
+            }
+        }
+        
+    }
+}
