@@ -282,8 +282,8 @@ main{
     min-height: 800px;
     @include flex(space-between,flex-start);
     @include bkpt(590px){
-      height: 600px;
-      min-height: 600px;
+      height: 650px;
+      min-height: 650px;
     }
     .title-area{
       padding-top: 50px;
