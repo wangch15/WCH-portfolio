@@ -120,8 +120,17 @@ main{
             margin-right: unset;
             margin-top: 50px;
           }
+          @include phone{
+            min-height: 300px;
+          }
+          @include phone{
+            min-height: unset;
+          }
           .name-area{
             color: var(--maincolor, $maincolor);
+            @include phone{
+              margin-bottom: 20px;
+            }
             .introTop{
               margin-bottom: 10px;
               @include flex(space-between,center);
@@ -132,11 +141,17 @@ main{
                 @include bkpt(590px){
                   font-size: $h2;
                 }
+                @include phone{
+                  font-size: $h3;
+                }
               }
               .ch-name{
                 font-size: $h2;
                 font-weight: 700;
                 line-height: 60px;
+                @include phone{
+                  font-size: $h3;
+                }
               }
             }
             .introBottom{
@@ -145,6 +160,10 @@ main{
               @include bkpt(590px){
                 font-size: $h2;
               }
+              @include phone{
+                font-size: $h3;
+              }
+
             }
           }
   
@@ -152,6 +171,10 @@ main{
             color: var(--fontcolor, $fontcolor);
             font-size: $h3;
             font-weight: 700;
+            @include phone{
+              font-size: $h4;
+              margin-bottom: 20px;
+            }
             span{
               color: var(--maincolor, $maincolor);
               font-weight: 900;
@@ -159,10 +182,23 @@ main{
           }
   
           .contact-area{
+            @include phone{
+              width: 100%;
+              @include flex(flex-start,flex-start);
+              flex-direction:column;
+              flex-wrap: wrap
+            }
             .age-phone-box,.address-mail-box{
               @include flex(flex-start,center);
+              @include phone{
+                flex-wrap: wrap;
+              }
               .firstbox{
                 min-width: 150px;
+                @include phone{
+                  min-width: unset;
+                  width: 100%;
+                }
                 @include flex(flex-start,center);
                 .iconbox{
                   width: 25px;
@@ -225,6 +261,9 @@ main{
           }
           @include bkpt(590px){
             width: 355px;
+          }
+          @include phone{
+            width: 100%;
           }
           p{
             

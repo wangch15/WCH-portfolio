@@ -75,6 +75,9 @@ body {
     @include phone{
         width: 280px;
     }
+    @include bkpt(420px){
+        width: 230px;
+      }
 
     .swiper-info-box{
         width: 100%;

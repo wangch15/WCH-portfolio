@@ -307,8 +307,26 @@ main #intro .container .intro-info .left-side-area {
   }
 }
 
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area {
+    min-height: unset;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .name-area {
   color: var(--maincolor, #394149);
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .name-area {
+    margin-bottom: 20px;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .name-area .introTop {
@@ -336,10 +354,22 @@ main #intro .container .intro-info .left-side-area .name-area .introTop .im {
   }
 }
 
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .name-area .introTop .im {
+    font-size: 2.25rem;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
   font-size: 3.4375rem;
   font-weight: 700;
   line-height: 60px;
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
+    font-size: 2.25rem;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .name-area .introBottom {
@@ -353,15 +383,49 @@ main #intro .container .intro-info .left-side-area .name-area .introBottom {
   }
 }
 
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .name-area .introBottom {
+    font-size: 2.25rem;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .skill-area {
   color: var(--fontcolor, #88929B);
   font-size: 2.25rem;
   font-weight: 700;
 }
 
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .skill-area {
+    font-size: 1.6875rem;
+    margin-bottom: 20px;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .skill-area span {
   color: var(--maincolor, #394149);
   font-weight: 900;
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .contact-area {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
@@ -376,6 +440,13 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box,
           align-items: center;
 }
 
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
   min-width: 150px;
   display: -webkit-box;
@@ -387,6 +458,13 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
+    min-width: unset;
+    width: 100%;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox {
@@ -498,6 +576,12 @@ main #intro .container .intro-info .right-side-area {
 @media (max-width: 590px) {
   main #intro .container .intro-info .right-side-area {
     width: 355px;
+  }
+}
+
+@media (max-width: 468px) {
+  main #intro .container .intro-info .right-side-area {
+    width: 100%;
   }
 }
 
