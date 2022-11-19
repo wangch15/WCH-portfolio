@@ -58,6 +58,9 @@ body {
 
 .swiper-wrapper{
     height: 565px;
+    @include bkpt(590px){
+        height: unset;
+      }
 }
 
 .swiper-slide {
@@ -66,12 +69,22 @@ body {
     height: 100%;
     @include flex(flex-start,flex-start);
     flex-direction: column;
+    @include bkpt(590px){
+        width: 320px;
+      }
+    @include phone{
+        width: 280px;
+    }
+
     .swiper-info-box{
         width: 100%;
         height: 150px;
         margin-bottom: 15px;
         @include flex(flex-start,flex-start);
         flex-direction: column;
+        @include bkpt(590px){
+            height: unset;
+          }
         .info-title-box{
             margin-bottom: 20px;
             .title{
@@ -96,6 +109,9 @@ body {
         height: 400px;
         background-size: cover;
         background-position: center;
+        @include bkpt(590px){
+            height: 320px;
+        }
         
         .mask{
             width: 100%;
@@ -116,7 +132,11 @@ body {
     width:120px;
     height: 50px;
     @include flex(space-between,center);
-
+    @include bkpt(590px){
+        width:80px;
+        height: 30px;
+        margin-top: 40px;
+      }
     .swiper-button-next, .swiper-button-prev {
         border-radius: 50%;
         border: 1px solid var(--maincolor, $maincolor);
@@ -124,6 +144,11 @@ body {
         height: 50px;
         position:static;
         transition: .5s;
+        transform: translateY(40%);
+        @include bkpt(590px){
+            width: 30px;
+            height: 30px;
+          }
         &::after{
            content: unset;
         }
@@ -131,6 +156,9 @@ body {
             font-size: 25px;
             color: var(--maincolor, $maincolor);
             transition: .5s;
+            @include bkpt(590px){
+                font-size: 20px;
+              }
         }
         &:hover {
             background-color: var(--maincolor, $maincolor);

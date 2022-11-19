@@ -94,6 +94,12 @@ html {
   }
 }
 
+@media (max-width: 590px) {
+  html {
+    font-size: 13px;
+  }
+}
+
 body {
   font-family: "Inter", "Noto Sans TC", sans-serif;
 }
@@ -324,6 +330,12 @@ main #intro .container .intro-info .left-side-area .name-area .introTop .im {
   line-height: 60px;
 }
 
+@media (max-width: 590px) {
+  main #intro .container .intro-info .left-side-area .name-area .introTop .im {
+    font-size: 3.4375rem;
+  }
+}
+
 main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
   font-size: 3.4375rem;
   font-weight: 700;
@@ -333,6 +345,12 @@ main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name
 main #intro .container .intro-info .left-side-area .name-area .introBottom {
   font-size: 3.75rem;
   font-weight: 700;
+}
+
+@media (max-width: 590px) {
+  main #intro .container .intro-info .left-side-area .name-area .introBottom {
+    font-size: 3.4375rem;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .skill-area {
@@ -477,6 +495,12 @@ main #intro .container .intro-info .right-side-area {
   }
 }
 
+@media (max-width: 590px) {
+  main #intro .container .intro-info .right-side-area {
+    width: 355px;
+  }
+}
+
 main #intro .container .intro-info .right-side-area p {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
@@ -497,12 +521,33 @@ main #works {
           align-items: flex-start;
 }
 
+@media (max-width: 590px) {
+  main #works {
+    height: 600px;
+    min-height: 600px;
+  }
+}
+
 main #works .title-area {
   padding-top: 50px;
   min-width: 140px;
   height: 100%;
   border-right: 1px solid var(--maincolor, #394149);
   margin-right: 100px;
+}
+
+@media (max-width: 900px) {
+  main #works .title-area {
+    min-width: 70px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 590px) {
+  main #works .title-area {
+    min-width: 50px;
+    margin-right: 25px;
+  }
 }
 
 main #works .title-area span {
@@ -517,11 +562,24 @@ main #works .title-area span {
           transform: rotate(180deg);
 }
 
+@media (max-width: 900px) {
+  main #works .title-area span {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+
 main #works .swiper-area {
   width: 100%;
   height: calc(100% - 50px);
   margin-top: 50px;
   overflow: hidden;
+}
+
+@media (max-width: 590px) {
+  main #works .swiper-area {
+    max-height: 600px;
+  }
 }
 
 main #aboutMe {
@@ -607,6 +665,7 @@ main #aboutMe .container .left-side-area {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-height: unset;
   }
 }
 
@@ -625,7 +684,9 @@ main #aboutMe .container .left-side-area .title-area {
     -webkit-box-flex: unset;
         -ms-flex: unset;
             flex: unset;
-    padding: 50px 0;
+    padding: 40px 0;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -633,6 +694,12 @@ main #aboutMe .container .left-side-area .photo-area {
   width: 100%;
   height: 410px;
   background: black;
+}
+
+@media (max-width: 468px) {
+  main #aboutMe .container .left-side-area .photo-area {
+    height: calc(410 * var(--p468));
+  }
 }
 
 main #aboutMe .container .right-side-area {
@@ -655,13 +722,19 @@ main #aboutMe .container .right-side-area {
           flex-direction: column;
 }
 
+@media (max-width: 900px) {
+  main #aboutMe .container .right-side-area {
+    min-height: unset;
+  }
+}
+
 main #aboutMe .container .right-side-area .personality-area {
   width: 100%;
 }
 
 @media (max-width: 900px) {
   main #aboutMe .container .right-side-area .personality-area {
-    padding: 25px 0 0;
+    padding: 20px 0 50px;
   }
 }
 
@@ -696,6 +769,12 @@ main #aboutMe .container .right-side-area .personality-area ul li {
   padding-right: 15px;
 }
 
+@media (max-width: 468px) {
+  main #aboutMe .container .right-side-area .personality-area ul li {
+    width: 100%;
+  }
+}
+
 main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
   color: var(--maincolor, #394149);
   font-size: 15px;
@@ -712,6 +791,12 @@ main #aboutMe .container .right-side-area .personality-area ul li span {
 main #aboutMe .container .right-side-area .personality-area ul li:nth-child(2n) {
   width: 45%;
   padding-right: 0px;
+}
+
+@media (max-width: 468px) {
+  main #aboutMe .container .right-side-area .personality-area ul li:nth-child(2n) {
+    width: 100%;
+  }
 }
 
 main #aboutMe .container .right-side-area .skills-area {
