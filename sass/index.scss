@@ -200,6 +200,7 @@ main{
 
     margin-left: 25px;
     height: calc(100vh - 60px);
+    min-height: 800px;
     @include flex(space-between,flex-start);
     .title-area{
       padding-top: 50px;

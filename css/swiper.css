@@ -153,6 +153,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .swiper-slide .swiper-info-box {
   width: 100%;
   height: 150px;
@@ -171,30 +172,36 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 .swiper-slide .swiper-info-box .info-title-box {
   margin-bottom: 20px;
 }
+
 .swiper-slide .swiper-info-box .info-title-box .title {
   font-size: 1.6875rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
 }
+
 .swiper-slide .swiper-info-box .info-title-box .category {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
   text-align: start;
 }
+
 .swiper-slide .swiper-info-box .info-content {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
   text-align: start;
 }
+
 .swiper-slide .swiper-img {
   width: 100%;
   height: 400px;
   background-size: cover;
   background-position: center;
 }
+
 .swiper-slide .swiper-img .mask {
   width: 100%;
   height: 100%;
@@ -202,6 +209,7 @@ body {
   -webkit-transition: 1s;
   transition: 1s;
 }
+
 .swiper-slide .swiper-img:hover .mask {
   background-color: var(--hovercolor, #ffffff);
   opacity: 0.5;
@@ -209,7 +217,7 @@ body {
 
 .next-prev-box {
   position: relative;
-  margin-top: 100px;
+  margin-top: 75px;
   width: 120px;
   height: 50px;
   display: -webkit-box;
@@ -222,27 +230,33 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .next-prev-box .swiper-button-next, .next-prev-box .swiper-button-prev {
   border-radius: 50%;
   border: 1px solid var(--maincolor, #394149);
   width: 50px;
   height: 50px;
   position: static;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
 .next-prev-box .swiper-button-next::after, .next-prev-box .swiper-button-prev::after {
   content: unset;
 }
+
 .next-prev-box .swiper-button-next i, .next-prev-box .swiper-button-prev i {
   font-size: 25px;
   color: var(--maincolor, #394149);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
+
 .next-prev-box .swiper-button-next:hover, .next-prev-box .swiper-button-prev:hover {
   background-color: var(--maincolor, #394149);
 }
+
 .next-prev-box .swiper-button-next:hover i, .next-prev-box .swiper-button-prev:hover i {
   color: var(--bgcolor, #eff1f3);
-}/*# sourceMappingURL=swiper.css.map */
+}
+/*# sourceMappingURL=swiper.css.map */

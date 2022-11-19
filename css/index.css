@@ -114,6 +114,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+
 header .logo-area {
   width: 140px;
   height: 100%;
@@ -128,17 +129,20 @@ header .logo-area {
       -ms-flex-align: center;
           align-items: center;
 }
+
 header .logo-area a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
 }
+
 header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   height: 100%;
 }
+
 header .sns-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,12 +157,14 @@ header .sns-area {
   border-left: 1px solid var(--maincolor, #394149);
   padding-left: 10px;
 }
+
 header .sns-area .fa-brands {
   font-size: 1.5rem;
   color: var(--maincolor, #394149);
   cursor: pointer;
   margin-left: 12px;
 }
+
 header .sns-area .fa-brands:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -182,6 +188,7 @@ main #intro {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 main #intro .intro-top {
   width: 100%;
   padding-top: 20px;
@@ -195,18 +202,22 @@ main #intro .intro-top {
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .intro-top button {
   background: none;
   border: none;
   font-size: 1rem;
   color: var(--maincolor, #394149);
 }
+
 main #intro .intro-top .modeBtn {
   cursor: pointer;
 }
+
 main #intro .intro-top .modeBtn:hover {
   font-weight: 700;
 }
+
 main #intro .container {
   width: 1024px;
   -webkit-box-flex: 1;
@@ -222,6 +233,7 @@ main #intro .container {
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info {
   width: 100%;
   height: auto;
@@ -235,6 +247,7 @@ main #intro .container .intro-info {
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area {
   height: 100%;
   min-height: 372px;
@@ -253,9 +266,11 @@ main #intro .container .intro-info .left-side-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 main #intro .container .intro-info .left-side-area .name-area {
   color: var(--maincolor, #394149);
 }
+
 main #intro .container .intro-info .left-side-area .name-area .introTop {
   margin-bottom: 10px;
   display: -webkit-box;
@@ -268,29 +283,35 @@ main #intro .container .intro-info .left-side-area .name-area .introTop {
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .name-area .introTop .im {
   font-size: 3.75rem;
   font-weight: 700;
   line-height: 60px;
 }
+
 main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
   font-size: 3.4375rem;
   font-weight: 700;
   line-height: 60px;
 }
+
 main #intro .container .intro-info .left-side-area .name-area .introBottom {
   font-size: 3.75rem;
   font-weight: 700;
 }
+
 main #intro .container .intro-info .left-side-area .skill-area {
   color: var(--fontcolor, #88929B);
   font-size: 2.25rem;
   font-weight: 700;
 }
+
 main #intro .container .intro-info .left-side-area .skill-area span {
   color: var(--maincolor, #394149);
   font-weight: 900;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +323,7 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box,
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
   min-width: 150px;
   display: -webkit-box;
@@ -314,6 +336,7 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox {
   width: 25px;
   height: 25px;
@@ -328,14 +351,17 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox .fa-solid {
   font-size: 15px;
   color: var(--maincolor, #394149);
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,6 +373,7 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox {
   width: 25px;
   height: 25px;
@@ -361,38 +388,47 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox .fa-solid {
   font-size: 16px;
   color: var(--maincolor, #394149);
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .language-box {
   font-size: 1rem;
   margin-top: 5px;
   padding-left: 5px;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-title {
   color: var(--maincolor, #394149);
   font-weight: 700;
 }
+
 main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-content {
   color: var(--fontcolor, #88929B);
 }
+
 main #intro .container .intro-info .right-side-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
+
 main #intro .container .intro-info .right-side-area p {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
+
 main #works {
   margin-left: 25px;
   height: calc(100vh - 60px);
+  min-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +439,7 @@ main #works {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 main #works .title-area {
   padding-top: 50px;
   min-width: 140px;
@@ -410,6 +447,7 @@ main #works .title-area {
   border-right: 1px solid var(--maincolor, #394149);
   margin-right: 100px;
 }
+
 main #works .title-area span {
   font-size: 3.75rem;
   font-weight: 700;
@@ -421,12 +459,14 @@ main #works .title-area span {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
 main #works .swiper-area {
   width: 100%;
   height: calc(100% - 50px);
   margin-top: 50px;
   overflow: hidden;
 }
+
 main #aboutMe {
   margin: 0 25px;
   height: calc(100vh - 60px);
@@ -442,6 +482,7 @@ main #aboutMe {
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #aboutMe .container {
   width: 1024px;
   height: auto;
@@ -455,6 +496,7 @@ main #aboutMe .container {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+
 main #aboutMe .container .left-side-area {
   width: 400px;
   min-height: 590px;
@@ -473,6 +515,7 @@ main #aboutMe .container .left-side-area {
           flex-direction: column;
   margin-right: 70px;
 }
+
 main #aboutMe .container .left-side-area .title-area {
   font-size: 3.75rem;
   font-weight: 700;
@@ -482,11 +525,13 @@ main #aboutMe .container .left-side-area .title-area {
           flex: 1;
   line-height: 60px;
 }
+
 main #aboutMe .container .left-side-area .photo-area {
   width: 100%;
   height: 410px;
   background: black;
 }
+
 main #aboutMe .container .right-side-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -506,9 +551,11 @@ main #aboutMe .container .right-side-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 main #aboutMe .container .right-side-area .personality-area {
   width: 100%;
 }
+
 main #aboutMe .container .right-side-area .personality-area ul {
   list-style: none;
   width: 100%;
@@ -524,6 +571,7 @@ main #aboutMe .container .right-side-area .personality-area ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
 main #aboutMe .container .right-side-area .personality-area ul li {
   width: 50%;
   display: -webkit-box;
@@ -537,16 +585,19 @@ main #aboutMe .container .right-side-area .personality-area ul li {
           align-items: center;
   margin-bottom: 15px;
 }
+
 main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
   color: var(--maincolor, #394149);
   font-size: 15px;
   margin-right: 20px;
 }
+
 main #aboutMe .container .right-side-area .personality-area ul li span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
   font-weight: 500;
 }
+
 main #aboutMe .container .right-side-area .skills-area {
   width: 100%;
   height: 410px;
@@ -564,14 +615,17 @@ main #aboutMe .container .right-side-area .skills-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 main #aboutMe .container .right-side-area .skills-area .title {
   font-size: 1.6875rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
 }
+
 main #aboutMe .container .right-side-area .skills-area .skill-content {
   width: 100%;
 }
+
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top {
   width: 100%;
   margin-bottom: 3px;
@@ -585,15 +639,18 @@ main #aboutMe .container .right-side-area .skills-area .skill-content .skill-con
       -ms-flex-align: center;
           align-items: center;
 }
+
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top .content {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
+
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom {
   width: 100%;
   height: 16px;
   border: 1px solid var(--maincolor, #394149);
 }
+
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom .fullbar {
   border: 1px solid var(--bgcolor, #eff1f3);
   height: 100%;
@@ -614,11 +671,13 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+
 footer .copyright {
   font-size: 1rem;
   color: var(--maincolor, #394149);
   font-weight: 500;
 }
+
 footer .contact-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,6 +689,7 @@ footer .contact-area {
       -ms-flex-align: center;
           align-items: center;
 }
+
 footer .contact-area .sns-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,19 +703,23 @@ footer .contact-area .sns-area {
   height: 100%;
   padding-left: 10px;
 }
+
 footer .contact-area .sns-area .fa-brands {
   font-size: 1.5rem;
   color: var(--maincolor, #394149);
   cursor: pointer;
   margin-left: 12px;
 }
+
 footer .contact-area .sns-area .fa-brands:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
+
 footer .contact-area .contact-p-e-area {
   font-size: 1rem;
   color: var(--maincolor, #394149);
   font-weight: 500;
   margin-left: 30px;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
