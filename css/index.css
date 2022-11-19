@@ -79,13 +79,19 @@ textarea {
 :root {
   --p1920:calc(100vw / 1920);
   --p1440: calc(100vw / 1440);
-  --p1100: calc(100vw / 1100);
+  --p1100: calc(100vw / 1074);
   --p768: calc(100vw / 768);
   --p468: calc(100vw / 468);
 }
 
 html {
   font-size: 16px;
+}
+
+@media (max-width: 1074px) {
+  html {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -189,6 +195,12 @@ main #intro {
           flex-direction: column;
 }
 
+@media (max-width: 900px) {
+  main #intro {
+    height: auto;
+  }
+}
+
 main #intro .intro-top {
   width: 100%;
   padding-top: 20px;
@@ -234,6 +246,12 @@ main #intro .container {
           align-items: center;
 }
 
+@media (max-width: 1074px) {
+  main #intro .container {
+    width: unset;
+  }
+}
+
 main #intro .container .intro-info {
   width: 100%;
   height: auto;
@@ -246,6 +264,15 @@ main #intro .container .intro-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 900px) {
+  main #intro .container .intro-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main #intro .container .intro-info .left-side-area {
@@ -265,6 +292,13 @@ main #intro .container .intro-info .left-side-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  main #intro .container .intro-info .left-side-area {
+    margin-right: unset;
+    margin-top: 50px;
+  }
 }
 
 main #intro .container .intro-info .left-side-area .name-area {
@@ -418,6 +452,29 @@ main #intro .container .intro-info .right-side-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 372px;
+}
+
+@media (max-width: 900px) {
+  main #intro .container .intro-info .right-side-area {
+    width: 450px;
+    border-top: 1px solid var(--fontcolor, #88929B);
+    padding: 50px 0 50px;
+    margin-top: 50px;
+  }
 }
 
 main #intro .container .intro-info .right-side-area p {
@@ -483,6 +540,12 @@ main #aboutMe {
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  main #aboutMe {
+    height: unset;
+  }
+}
+
 main #aboutMe .container {
   width: 1024px;
   height: auto;
@@ -495,6 +558,15 @@ main #aboutMe .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  main #aboutMe .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main #aboutMe .container .left-side-area {
@@ -516,6 +588,28 @@ main #aboutMe .container .left-side-area {
   margin-right: 70px;
 }
 
+@media (max-width: 1074px) {
+  main #aboutMe .container .left-side-area {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  main #aboutMe .container .left-side-area {
+    width: 100%;
+    margin-right: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 main #aboutMe .container .left-side-area .title-area {
   font-size: 3.75rem;
   font-weight: 700;
@@ -524,6 +618,15 @@ main #aboutMe .container .left-side-area .title-area {
       -ms-flex: 1;
           flex: 1;
   line-height: 60px;
+}
+
+@media (max-width: 900px) {
+  main #aboutMe .container .left-side-area .title-area {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    padding: 50px 0;
+  }
 }
 
 main #aboutMe .container .left-side-area .photo-area {
@@ -556,6 +659,12 @@ main #aboutMe .container .right-side-area .personality-area {
   width: 100%;
 }
 
+@media (max-width: 900px) {
+  main #aboutMe .container .right-side-area .personality-area {
+    padding: 25px 0 0;
+  }
+}
+
 main #aboutMe .container .right-side-area .personality-area ul {
   list-style: none;
   width: 100%;
@@ -573,7 +682,7 @@ main #aboutMe .container .right-side-area .personality-area ul {
 }
 
 main #aboutMe .container .right-side-area .personality-area ul li {
-  width: 50%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,6 +693,7 @@ main #aboutMe .container .right-side-area .personality-area ul li {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  padding-right: 15px;
 }
 
 main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
@@ -596,6 +706,12 @@ main #aboutMe .container .right-side-area .personality-area ul li span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
   font-weight: 500;
+  line-height: calc($h6 + 2px);
+}
+
+main #aboutMe .container .right-side-area .personality-area ul li:nth-child(2n) {
+  width: 45%;
+  padding-right: 0px;
 }
 
 main #aboutMe .container .right-side-area .skills-area {
@@ -614,6 +730,12 @@ main #aboutMe .container .right-side-area .skills-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  main #aboutMe .container .right-side-area .skills-area {
+    padding: 0 0 50px;
+  }
 }
 
 main #aboutMe .container .right-side-area .skills-area .title {
@@ -721,5 +843,11 @@ footer .contact-area .contact-p-e-area {
   color: var(--maincolor, #394149);
   font-weight: 500;
   margin-left: 30px;
+}
+
+@media (max-width: 900px) {
+  footer .contact-area .contact-p-e-area {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */

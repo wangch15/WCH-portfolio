@@ -20,7 +20,7 @@
 :root{
     --p1920:calc(100vw / 1920);
     --p1440: calc(100vw / 1440);
-    --p1100: calc(100vw / 1100);
+    --p1100: calc(100vw / 1074);
     --p768: calc(100vw / 768);
     --p468: calc(100vw / 468);
 }
@@ -32,8 +32,8 @@
 };
 
 //小螢幕版面設置
-@mixin s-monitor{
-    @media (max-width:1100px) {
+@mixin small-pc{
+    @media (max-width:1074px) {
         @content
     }
 };
