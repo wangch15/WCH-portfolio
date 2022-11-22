@@ -70,6 +70,7 @@ textarea {
   --fontcolor:#88929B;
   --bgcolor:#394149;
   --hovercolor:black;
+  --photo:url(../img/wangch-photo-color-b@2x.png);
 }
 
 .color-example {
@@ -777,12 +778,23 @@ main #aboutMe .container .left-side-area .title-area {
 main #aboutMe .container .left-side-area .photo-area {
   width: 100%;
   height: 410px;
-  background: black;
+  background-image: url(../img/wangch-photo-color-w@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid var(--maincolor, #394149);
+}
+
+@media (max-width: 900px) {
+  main #aboutMe .container .left-side-area .photo-area {
+    background-size: 410px;
+  }
 }
 
 @media (max-width: 468px) {
   main #aboutMe .container .left-side-area .photo-area {
     height: calc(410 * var(--p468));
+    background-size: 410px;
   }
 }
 

@@ -18,12 +18,17 @@ $fontcolor:#88929B;
 $bgcolor:#eff1f3 ;
 $hovercolor:#ffffff;
 
+
+//圖片設置
+$photo:url(../img/wangch-photo-color-w@2x.png);
+
 //深色模式，之後需要會正式啟用
 .darkmode {
 --maincolor:#e8ecf0;
 --fontcolor:#88929B;
 --bgcolor:#394149;
 --hovercolor:black;
+--photo:url(../img/wangch-photo-color-b@2x.png);
 }
 
 //如需使用顏色，請幫我使用上面那段var開始的顏色代碼，下面為範例

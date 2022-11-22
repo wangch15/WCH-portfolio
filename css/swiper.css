@@ -69,6 +69,7 @@ textarea {
   --fontcolor:#88929B;
   --bgcolor:#394149;
   --hovercolor:black;
+  --photo:url(../img/wangch-photo-color-b@2x.png);
 }
 
 .color-example {

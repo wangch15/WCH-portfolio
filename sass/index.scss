@@ -375,9 +375,17 @@ main{
         .photo-area{
           width: 100%;
           height: 410px;
-          background: black;
+          background-image: $photo;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 1px solid var(--maincolor,$maincolor);;
+          @include bkpt(900px){
+            background-size: 410px;
+          }
           @include phone{
             height: calc(410 * var(--p468));
+            background-size: 410px;
           }
         }
       }
