@@ -194,7 +194,7 @@ body {
 }
 @media (max-width: 590px) {
   .swiper-slide .swiper-info-box {
-    height: unset;
+    height: 120px;
   }
 }
 .swiper-slide .swiper-info-box .info-title-box {

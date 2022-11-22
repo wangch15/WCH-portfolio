@@ -86,7 +86,7 @@ body {
         @include flex(flex-start,flex-start);
         flex-direction: column;
         @include bkpt(590px){
-            height: unset;
+            height: 120px;
           }
         .info-title-box{
             margin-bottom: 20px;
