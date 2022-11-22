@@ -88,13 +88,11 @@ textarea {
 html {
   font-size: 16px;
 }
-
 @media (max-width: 1074px) {
   html {
     font-size: 15px;
   }
 }
-
 @media (max-width: 590px) {
   html {
     font-size: 13px;
@@ -127,7 +125,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
 header .logo-area {
   width: 140px;
   height: 100%;
@@ -142,20 +139,17 @@ header .logo-area {
       -ms-flex-align: center;
           align-items: center;
 }
-
 header .logo-area a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
 }
-
 header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   height: 100%;
 }
-
 header .sns-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,14 +164,12 @@ header .sns-area {
   border-left: 1px solid var(--maincolor, #394149);
   padding-left: 10px;
 }
-
 header .sns-area .fa-brands {
   font-size: 1.5rem;
   color: var(--maincolor, #394149);
   cursor: pointer;
   margin-left: 12px;
 }
-
 header .sns-area .fa-brands:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -201,13 +193,11 @@ main #intro {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media (max-width: 900px) {
   main #intro {
     height: auto;
   }
 }
-
 main #intro .intro-top {
   width: 100%;
   padding-top: 20px;
@@ -221,22 +211,18 @@ main #intro .intro-top {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #intro .intro-top button {
   background: none;
   border: none;
   font-size: 1rem;
   color: var(--maincolor, #394149);
 }
-
 main #intro .intro-top .modeBtn {
   cursor: pointer;
 }
-
 main #intro .intro-top .modeBtn:hover {
   font-weight: 700;
 }
-
 main #intro .container {
   width: 1024px;
   -webkit-box-flex: 1;
@@ -252,13 +238,11 @@ main #intro .container {
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media (max-width: 1074px) {
   main #intro .container {
     width: unset;
   }
 }
-
 main #intro .container .intro-info {
   width: 100%;
   height: auto;
@@ -272,7 +256,6 @@ main #intro .container .intro-info {
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media (max-width: 900px) {
   main #intro .container .intro-info {
     -webkit-box-orient: vertical;
@@ -281,7 +264,6 @@ main #intro .container .intro-info {
             flex-direction: column;
   }
 }
-
 main #intro .container .intro-info .left-side-area {
   height: 100%;
   min-height: 372px;
@@ -300,36 +282,30 @@ main #intro .container .intro-info .left-side-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media (max-width: 900px) {
   main #intro .container .intro-info .left-side-area {
     margin-right: unset;
     margin-top: 50px;
   }
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area {
     min-height: 300px;
   }
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area {
     min-height: unset;
   }
 }
-
 main #intro .container .intro-info .left-side-area .name-area {
   color: var(--maincolor, #394149);
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .name-area {
     margin-bottom: 20px;
   }
 }
-
 main #intro .container .intro-info .left-side-area .name-area .introTop {
   margin-bottom: 10px;
   display: -webkit-box;
@@ -342,72 +318,60 @@ main #intro .container .intro-info .left-side-area .name-area .introTop {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #intro .container .intro-info .left-side-area .name-area .introTop .im {
   font-size: 3.75rem;
   font-weight: 700;
   line-height: 60px;
 }
-
 @media (max-width: 590px) {
   main #intro .container .intro-info .left-side-area .name-area .introTop .im {
     font-size: 3.4375rem;
   }
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .name-area .introTop .im {
     font-size: 2.25rem;
   }
 }
-
 main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
   font-size: 3.4375rem;
   font-weight: 700;
   line-height: 60px;
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .name-area .introTop .ch-name {
     font-size: 2.25rem;
   }
 }
-
 main #intro .container .intro-info .left-side-area .name-area .introBottom {
   font-size: 3.75rem;
   font-weight: 700;
 }
-
 @media (max-width: 590px) {
   main #intro .container .intro-info .left-side-area .name-area .introBottom {
     font-size: 3.4375rem;
   }
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .name-area .introBottom {
     font-size: 2.25rem;
   }
 }
-
 main #intro .container .intro-info .left-side-area .skill-area {
   color: var(--fontcolor, #88929B);
   font-size: 2.25rem;
   font-weight: 700;
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .skill-area {
     font-size: 1.6875rem;
     margin-bottom: 20px;
   }
 }
-
 main #intro .container .intro-info .left-side-area .skill-area span {
   color: var(--maincolor, #394149);
   font-weight: 900;
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .contact-area {
     width: 100%;
@@ -428,7 +392,6 @@ main #intro .container .intro-info .left-side-area .skill-area span {
         flex-wrap: wrap;
   }
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,14 +403,12 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box,
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .contact-area .age-phone-box, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
   min-width: 150px;
   display: -webkit-box;
@@ -460,14 +421,12 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox {
     min-width: unset;
     width: 100%;
   }
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox {
   width: 25px;
   height: 25px;
@@ -482,17 +441,14 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox .iconbox .fa-solid {
   font-size: 15px;
   color: var(--maincolor, #394149);
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .firstbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .firstbox span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,7 +460,6 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox {
   width: 25px;
   height: 25px;
@@ -519,32 +474,26 @@ main #intro .container .intro-info .left-side-area .contact-area .age-phone-box 
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox .iconbox .fa-solid, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox .iconbox .fa-solid {
   font-size: 16px;
   color: var(--maincolor, #394149);
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .age-phone-box .secondbox span, main #intro .container .intro-info .left-side-area .contact-area .address-mail-box .secondbox span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .language-box {
   font-size: 1rem;
   margin-top: 5px;
   padding-left: 5px;
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-title {
   color: var(--maincolor, #394149);
   font-weight: 700;
 }
-
 main #intro .container .intro-info .left-side-area .contact-area .language-box .lang-content {
   color: var(--fontcolor, #88929B);
 }
-
 main #intro .container .intro-info .right-side-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -564,7 +513,6 @@ main #intro .container .intro-info .right-side-area {
           flex-direction: column;
   min-height: 372px;
 }
-
 @media (max-width: 900px) {
   main #intro .container .intro-info .right-side-area {
     width: 450px;
@@ -573,24 +521,20 @@ main #intro .container .intro-info .right-side-area {
     margin-top: 50px;
   }
 }
-
 @media (max-width: 590px) {
   main #intro .container .intro-info .right-side-area {
     width: 355px;
   }
 }
-
 @media (max-width: 468px) {
   main #intro .container .intro-info .right-side-area {
     width: 100%;
   }
 }
-
 main #intro .container .intro-info .right-side-area p {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
-
 main #works {
   margin-left: 25px;
   height: calc(100vh - 60px);
@@ -605,14 +549,12 @@ main #works {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
 @media (max-width: 590px) {
   main #works {
     height: 650px;
     min-height: 650px;
   }
 }
-
 main #works .title-area {
   padding-top: 50px;
   min-width: 140px;
@@ -620,21 +562,18 @@ main #works .title-area {
   border-right: 1px solid var(--maincolor, #394149);
   margin-right: 100px;
 }
-
 @media (max-width: 900px) {
   main #works .title-area {
     min-width: 70px;
     margin-right: 50px;
   }
 }
-
 @media (max-width: 590px) {
   main #works .title-area {
     min-width: 50px;
     margin-right: 25px;
   }
 }
-
 main #works .title-area span {
   font-size: 3.75rem;
   font-weight: 700;
@@ -646,27 +585,23 @@ main #works .title-area span {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-
 @media (max-width: 900px) {
   main #works .title-area span {
     font-size: 2.25rem;
     line-height: 2.25rem;
   }
 }
-
 main #works .swiper-area {
   width: 100%;
   height: calc(100% - 50px);
   margin-top: 50px;
   overflow: hidden;
 }
-
 @media (max-width: 590px) {
   main #works .swiper-area {
     max-height: 600px;
   }
 }
-
 main #aboutMe {
   margin: 0 25px;
   height: calc(100vh - 60px);
@@ -682,13 +617,11 @@ main #aboutMe {
       -ms-flex-align: center;
           align-items: center;
 }
-
 @media (max-width: 900px) {
   main #aboutMe {
     height: unset;
   }
 }
-
 main #aboutMe .container {
   width: 1024px;
   height: auto;
@@ -702,7 +635,6 @@ main #aboutMe .container {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container {
     -webkit-box-orient: vertical;
@@ -711,7 +643,6 @@ main #aboutMe .container {
             flex-direction: column;
   }
 }
-
 main #aboutMe .container .left-side-area {
   width: 400px;
   min-height: 590px;
@@ -730,13 +661,11 @@ main #aboutMe .container .left-side-area {
           flex-direction: column;
   margin-right: 70px;
 }
-
 @media (max-width: 1074px) {
   main #aboutMe .container .left-side-area {
     margin-right: 45px;
   }
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .left-side-area {
     width: 100%;
@@ -753,7 +682,6 @@ main #aboutMe .container .left-side-area {
     min-height: unset;
   }
 }
-
 main #aboutMe .container .left-side-area .title-area {
   font-size: 3.75rem;
   font-weight: 700;
@@ -763,7 +691,6 @@ main #aboutMe .container .left-side-area .title-area {
           flex: 1;
   line-height: 60px;
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .left-side-area .title-area {
     -webkit-box-flex: unset;
@@ -774,7 +701,6 @@ main #aboutMe .container .left-side-area .title-area {
     line-height: 2.25rem;
   }
 }
-
 main #aboutMe .container .left-side-area .photo-area {
   width: 100%;
   height: 410px;
@@ -784,20 +710,17 @@ main #aboutMe .container .left-side-area .photo-area {
   background-repeat: no-repeat;
   border: 1px solid var(--maincolor, #394149);
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .left-side-area .photo-area {
     background-size: 410px;
   }
 }
-
 @media (max-width: 468px) {
   main #aboutMe .container .left-side-area .photo-area {
     height: calc(410 * var(--p468));
     background-size: 410px;
   }
 }
-
 main #aboutMe .container .right-side-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -817,23 +740,19 @@ main #aboutMe .container .right-side-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .right-side-area {
     min-height: unset;
   }
 }
-
 main #aboutMe .container .right-side-area .personality-area {
   width: 100%;
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .right-side-area .personality-area {
     padding: 20px 0 50px;
   }
 }
-
 main #aboutMe .container .right-side-area .personality-area ul {
   list-style: none;
   width: 100%;
@@ -849,7 +768,6 @@ main #aboutMe .container .right-side-area .personality-area ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 main #aboutMe .container .right-side-area .personality-area ul li {
   width: 55%;
   display: -webkit-box;
@@ -864,37 +782,31 @@ main #aboutMe .container .right-side-area .personality-area ul li {
   margin-bottom: 15px;
   padding-right: 15px;
 }
-
 @media (max-width: 468px) {
   main #aboutMe .container .right-side-area .personality-area ul li {
     width: 100%;
   }
 }
-
 main #aboutMe .container .right-side-area .personality-area ul li .fa-solid {
   color: var(--maincolor, #394149);
   font-size: 15px;
   margin-right: 20px;
 }
-
 main #aboutMe .container .right-side-area .personality-area ul li span {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
   font-weight: 500;
-  line-height: calc($h6 + 2px);
+  line-height: calc(1rem + 2px);
 }
-
 main #aboutMe .container .right-side-area .personality-area ul li:nth-child(2n) {
   width: 45%;
   padding-right: 0px;
 }
-
 @media (max-width: 468px) {
   main #aboutMe .container .right-side-area .personality-area ul li:nth-child(2n) {
     width: 100%;
   }
 }
-
 main #aboutMe .container .right-side-area .skills-area {
   width: 100%;
   height: 410px;
@@ -912,23 +824,19 @@ main #aboutMe .container .right-side-area .skills-area {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 @media (max-width: 900px) {
   main #aboutMe .container .right-side-area .skills-area {
     padding: 0 0 50px;
   }
 }
-
 main #aboutMe .container .right-side-area .skills-area .title {
   font-size: 1.6875rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
 }
-
 main #aboutMe .container .right-side-area .skills-area .skill-content {
   width: 100%;
 }
-
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top {
   width: 100%;
   margin-bottom: 3px;
@@ -942,18 +850,15 @@ main #aboutMe .container .right-side-area .skills-area .skill-content .skill-con
       -ms-flex-align: center;
           align-items: center;
 }
-
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-top .content {
   font-size: 1rem;
   color: var(--fontcolor, #88929B);
 }
-
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom {
   width: 100%;
   height: 16px;
   border: 1px solid var(--maincolor, #394149);
 }
-
 main #aboutMe .container .right-side-area .skills-area .skill-content .skill-content-bottom .fullbar {
   border: 1px solid var(--bgcolor, #eff1f3);
   height: 100%;
@@ -974,13 +879,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-
 footer .copyright {
   font-size: 1rem;
   color: var(--maincolor, #394149);
   font-weight: 500;
 }
-
 footer .contact-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,7 +895,6 @@ footer .contact-area {
       -ms-flex-align: center;
           align-items: center;
 }
-
 footer .contact-area .sns-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,29 +908,24 @@ footer .contact-area .sns-area {
   height: 100%;
   padding-left: 10px;
 }
-
 footer .contact-area .sns-area .fa-brands {
   font-size: 1.5rem;
   color: var(--maincolor, #394149);
   cursor: pointer;
   margin-left: 12px;
 }
-
 footer .contact-area .sns-area .fa-brands:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
-
 footer .contact-area .contact-p-e-area {
   font-size: 1rem;
   color: var(--maincolor, #394149);
   font-weight: 500;
   margin-left: 30px;
 }
-
 @media (max-width: 900px) {
   footer .contact-area .contact-p-e-area {
     display: none;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
