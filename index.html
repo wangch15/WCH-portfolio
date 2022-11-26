@@ -103,55 +103,22 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!-- 這裡開始新增swiper內容 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" v-for="(work,index) in worksList">
                             <div class="swiper-info-box">
                                 <div class="info-title-box">
-                                    <div class="title">森五七行館形象網站</div>
-                                    <div class="category">WEB DEVELOP</div>
+                                    <div class="title">{{work.title}}</div>
+                                    <div class="category">{{work.category}}</div>
                                 </div>
                                 <div class="info-content">
-                                    UI / UX設計, 前端頁面切版, 內含最新消息新增功能。
-                                    開發工具 : HTML, CSS, JavaScript, Laravel
+                                    {{work.content}}
                                 </div>
                             </div>
-                            <a href="https://www.shen57.com/" class="swiper-img"
-                                style="background-image: url(./img/shen57-mockup@2x.jpg) ;" target="_blank">
+                            <a v-bind:href="work.href" class="swiper-img"
+                                v-bind:style="work.img"
+                                target="_blank">
                                 <div class="mask"></div>
                             </a>
                         </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-info-box">
-                                <div class="info-title-box">
-                                    <div class="title">Microsoft微軟首頁仿作</div>
-                                    <div class="category">WEB PRACTISE</div>
-                                </div>
-                                <div class="info-content">
-                                    前端頁面切版練習 / RWD
-                                </div>
-                            </div>
-                            <a href="https://wangch15.github.io/microsoft-for-practise/" class="swiper-img"
-                                style="background-image: url(./img/microsoft-mockup-samll-1@2x.png) ;" target="_blank">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-info-box">
-                                <div class="info-title-box">
-                                    <div class="title">Youtube影片頁面仿切</div>
-                                    <div class="category">WEB PRACTISE</div>
-                                </div>
-                                <div class="info-content">
-                                    前端頁面切版練習 / RWD
-                                </div>
-                            </div>
-                            <a href="https://wangch15.github.io/Youtube-for-practise/" class="swiper-img"
-                                style="background-image: url(./img/youtube-mockup-samll-1@2x.png) ;" target="_blank">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
                         <!-- 這裡結束新增swiper內容 -->
                     </div>
                     <div class="next-prev-box">
@@ -185,63 +152,14 @@
                     <div class="skills-area">
                         <div class="title">SKILLS</div>
                         <!-- skill bar -->
-                        <div class="skill-content">
-                            <div class="skill-content-top">
-                                <div class="content">HTML, CSS</div>
-                                <div class="content">85%</div>
-                            </div>
-                            <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 85%;"></div>
-                            </div>
-                        </div>
 
-                        <div class="skill-content">
+                        <div class="skill-content" v-for="skill in skillList">
                             <div class="skill-content-top">
-                                <div class="content">JavaScript</div>
-                                <div class="content">85%</div>
+                                <div class="content">{{skill.title}}</div>
+                                <div class="content">{{skill.score}}%</div>
                             </div>
                             <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 85%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-content">
-                            <div class="skill-content-top">
-                                <div class="content">Laravel</div>
-                                <div class="content">75%</div>
-                            </div>
-                            <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 75%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-content">
-                            <div class="skill-content-top">
-                                <div class="content">illustrator</div>
-                                <div class="content">90%</div>
-                            </div>
-                            <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-content">
-                            <div class="skill-content-top">
-                                <div class="content">Photoshop</div>
-                                <div class="content">90%</div>
-                            </div>
-                            <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 90%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-content">
-                            <div class="skill-content-top">
-                                <div class="content">Painting</div>
-                                <div class="content">85%</div>
-                            </div>
-                            <div class="skill-content-bottom">
-                                <div class="fullbar" style="width: 85%;"></div>
+                                <div class="fullbar" v-bind:style="skill.bar"></div>
                             </div>
                         </div>
 
@@ -268,9 +186,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/vue.js"></script>
     <script src="./js/script.js"></script>
 
+    
+    
 </body>
 
 </html>
