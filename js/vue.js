@@ -14,7 +14,7 @@ const workApp = Vue.createApp({
                     content: '前端頁面切版練習 / RWD',
                     href: 'https://wangch15.github.io/microsoft-for-practise/',
                     img: 'background-image: url(./img/microsoft-mockup-samll-1@2x.png) ;'
-                },{
+                }, {
                     title: 'Youtube影片頁面仿切',
                     category: 'WEB PRACTISE',
                     content: '前端頁面切版練習 / RWD',
@@ -25,58 +25,73 @@ const workApp = Vue.createApp({
         }
     }, methods: {
 
-    }, mounted() {
+    }, beforeMount() {
         // fetch('../json/works.json')
-        // .then(result=>{
-        //     return result.json();
-        // })
-        // .then(myjson=>{
-        //     console.log(this.worksList);
-        //     this.worksList = myjson
-        //     console.log(myjson);
-        // })
+        //     .then(result => {
+        //         return result.json();
+        //     })
+        //     .then(data => {
+        //         this.worksList = data
+        //     })
+    }
+    , mounted() {
+
     },
-}).mount('#works')
+})
+
+workApp.mount('#works')
+
 
 const aboutApp = Vue.createApp({
     data() {
         return {
-            skillList:[
+            skillList: [
                 {
-                    title:'HTML, CSS',
-                    score:85,
-                    bar:'width: 85%;'
+                    title: 'HTML, CSS',
+                    score: 85,
+                    bar: 'width: 85%;'
                 },
                 {
-                    title:'JavaScript',
-                    score:85,
-                    bar:'width:85%;'
+                    title: 'JavaScript',
+                    score: 85,
+                    bar: 'width:85%;'
                 },
                 {
-                    title:'Laravel',
-                    score:75,
-                    bar:'width:75%;'
+                    title: 'Laravel',
+                    score: 75,
+                    bar: 'width:75%;'
                 },
                 {
-                    title:'illustrator',
-                    score:90,
-                    bar:'width:90%;'
+                    title: 'illustrator',
+                    score: 90,
+                    bar: 'width:90%;'
                 },
                 {
-                    title:'Photoshop',
-                    score:90,
-                    bar:'width:90%;'
+                    title: 'Photoshop',
+                    score: 90,
+                    bar: 'width:90%;'
                 },
                 {
-                    title:'Painting',
-                    score:85,
-                    bar:'width:85%;'
-                },
+                    title: 'Painting',
+                    score: 85,
+                    bar: 'width:85%;'
+                }
             ]
         }
     }, methods: {
 
-    }, mounted() {
+    }, beforeMount() {
+        // fetch('../json/skills.json')
+        //     .then(result => {
+        //         return result.json();
+        //     })
+        //     .then(data => {
+        //         this.skillList = data
+        //     })
+    }
+
+    , mounted() {
 
     },
 }).mount('#aboutMe')
+

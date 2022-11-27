@@ -39,7 +39,7 @@
     <main>
         <section id="intro">
             <div class="intro-top">
-                <button class="introfont">INTRO</button>
+                <button class="introfont" >INTRO</button>
                 <button class="modeBtn" onclick="changeMode()">DARK MODE</button>
             </div>
             <div class="container">
@@ -113,9 +113,7 @@
                                     {{work.content}}
                                 </div>
                             </div>
-                            <a v-bind:href="work.href" class="swiper-img"
-                                v-bind:style="work.img"
-                                target="_blank">
+                            <a v-bind:href="work.href" class="swiper-img" v-bind:style="work.img" target="_blank">
                                 <div class="mask"></div>
                             </a>
                         </div>
@@ -186,13 +184,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/vue.js"></script>
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    
+    <script src="./js/vue.js"></script>  
     <script src="./js/script.js"></script>
 
-    
-    
+
+
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "HTML, CSS",
+        "score": 85,
+        "bar": "width: 85%;"
+    },
+    {
+        "title": "JavaScript",
+        "score": 85,
+        "bar": "width:85%;"
+    },
+    {
+        "title": "Laravel",
+        "score": 75,
+        "bar": "width:75%;"
+    },
+    {
+        "title": "illustrator",
+        "score": 90,
+        "bar": "width:90%;"
+    },
+    {
+        "title": "Photoshop",
+        "score": 90,
+        "bar": "width:90%;"
+    },
+    {
+        "title": "Painting",
+        "score": 85,
+        "bar": "width:85%;"
+    }
+]
