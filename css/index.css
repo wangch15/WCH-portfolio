@@ -99,6 +99,15 @@ html {
   }
 }
 
+:root {
+  --marginSpace: 25px;
+}
+@media (max-width: 590px) {
+  :root {
+    --marginSpace: 15px;
+  }
+}
+
 body {
   font-family: "Inter", "Noto Sans TC", sans-serif;
 }
@@ -111,8 +120,8 @@ body {
 }
 
 header {
-  margin: 0 25px;
-  width: calc(100% - 50px);
+  margin: 0 var(--marginSpace);
+  width: calc(100% - 2 * var(--marginSpace));
   height: 60px;
   border-bottom: 1px solid var(--maincolor, #394149);
   display: -webkit-box;
@@ -191,8 +200,8 @@ header .sns-area .fa-brands:hover {
 }
 
 main #intro {
-  margin: 0 25px;
-  height: calc(100vh - 60px);
+  margin: 0 var(--marginSpace);
+  height: calc(100vh - 2 * var(--marginSpace));
   border-bottom: 1px solid var(--maincolor, #394149);
   min-height: 750px;
   display: -webkit-box;
@@ -558,7 +567,7 @@ main #intro .container .intro-info .right-side-area p {
   color: var(--fontcolor, #88929B);
 }
 main #works {
-  margin-left: 25px;
+  margin-left: var(--marginSpace);
   height: calc(100vh - 60px);
   min-height: 800px;
   display: -webkit-box;
@@ -630,7 +639,7 @@ main #works .swiper-area {
   }
 }
 main #aboutMe {
-  margin: 0 25px;
+  margin: 0 var(--marginSpace);
   height: calc(100vh - 60px);
   border-top: 1px solid var(--maincolor, #394149);
   border-bottom: 1px solid var(--maincolor, #394149);
@@ -900,8 +909,8 @@ main #aboutMe .container .right-side-area .skills-area .skill-content .skill-con
 }
 
 footer {
-  margin: 0 25px;
-  width: calc(100% - 50px);
+  margin: 0 var(--marginSpace);
+  width: calc(100% - 2 * var(--marginSpace));
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;

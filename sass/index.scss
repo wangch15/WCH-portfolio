@@ -16,6 +16,13 @@ html{
   }
 }
 
+:root{
+  --marginSpace : 25px;
+  @include bkpt(590px){
+    --marginSpace : 15px;
+  }
+}
+
 body{
   font-family: $engFont,$chFont,sans-serif;
 }
@@ -28,8 +35,8 @@ body{
 }
 
 header{
-  margin: 0 25px;
-  width: calc(100% - 50px);
+  margin: 0 var(--marginSpace);
+  width: calc(100% - 2 * var(--marginSpace));
   height: 60px;
   border-bottom: 1px solid var(--maincolor, $maincolor);
   @include flex(space-between,center);
@@ -78,8 +85,8 @@ header{
 
 main{
   #intro{
-    margin: 0 25px;
-    height: calc(100vh - 60px);
+    margin: 0 var(--marginSpace);
+    height: calc(100vh - 2 * var(--marginSpace));
     border-bottom: 1px solid var(--maincolor, $maincolor);
     min-height:750px;
     @include flex;
@@ -91,6 +98,7 @@ main{
     @include bkpt(900px){
       height: auto;
     }
+
     .intro-top{
       width: 100%;
       padding-top: 20px;
@@ -291,7 +299,7 @@ main{
 
   #works{
 
-    margin-left: 25px;
+    margin-left: var(--marginSpace);
     height: calc(100vh - 60px);
     min-height: 800px;
     @include flex(space-between,flex-start);
@@ -346,7 +354,7 @@ main{
   }
 
   #aboutMe{
-    margin:0 25px;
+    margin:0 var(--marginSpace);
     height: calc(100vh - 60px);
     border-top: 1px solid var(--maincolor, $maincolor);
     border-bottom: 1px solid var(--maincolor, $maincolor);
@@ -506,8 +514,8 @@ main{
 }
 
 footer{
-  margin: 0 25px;
-  width: calc(100% - 50px);
+  margin: 0 var(--marginSpace);
+  width: calc(100% - 2 * var(--marginSpace));
   height: 60px;
   @include flex(space-between,center);
   .copyright{
