@@ -125,6 +125,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 590px) {
+  header {
+    height: 50px;
+  }
+}
 header .logo-area {
   width: 140px;
   height: 100%;
@@ -143,6 +148,11 @@ header .logo-area a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--maincolor, #394149);
+}
+@media (max-width: 590px) {
+  header .logo-area {
+    border-right: unset;
+  }
 }
 header nav {
   -webkit-box-flex: 1;
@@ -164,6 +174,11 @@ header .sns-area {
   border-left: 1px solid var(--maincolor, #394149);
   padding-left: 10px;
 }
+@media (max-width: 590px) {
+  header .sns-area {
+    border-left: unset;
+  }
+}
 header .sns-area .fa-brands {
   font-size: 1.5rem;
   color: var(--maincolor, #394149);
@@ -179,6 +194,7 @@ main #intro {
   margin: 0 25px;
   height: calc(100vh - 60px);
   border-bottom: 1px solid var(--maincolor, #394149);
+  min-height: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,6 +208,12 @@ main #intro {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 1024px) {
+  main #intro {
+    height: 800px;
+    min-height: unset;
+  }
 }
 @media (max-width: 900px) {
   main #intro {
@@ -549,10 +571,15 @@ main #works {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 1024px) {
+  main #works {
+    height: 800px;
+    min-height: unset;
+  }
+}
 @media (max-width: 590px) {
   main #works {
     height: 650px;
-    min-height: 650px;
   }
 }
 main #works .title-area {
@@ -607,6 +634,7 @@ main #aboutMe {
   height: calc(100vh - 60px);
   border-top: 1px solid var(--maincolor, #394149);
   border-bottom: 1px solid var(--maincolor, #394149);
+  min-height: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,9 +645,15 @@ main #aboutMe {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1024px) {
+  main #aboutMe {
+    height: 800px;
+    min-height: unset;
+  }
+}
 @media (max-width: 900px) {
   main #aboutMe {
-    height: unset;
+    height: auto;
   }
 }
 main #aboutMe .container {
